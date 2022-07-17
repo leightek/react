@@ -23,10 +23,11 @@ console.log(element)
  */
 
 // JSX
-ReactDOM.render(
-    <div>
+const page = <div>
         <h1 className="header">This is JSX</h1>
         <p>This is a paragraph</p>,
-    </div>,
+    </div>
+ReactDOM.render(
+    page,
     document.getElementById("root")
 )
