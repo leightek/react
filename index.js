@@ -1,6 +1,26 @@
-ReactDOM.render(<h1 className="header">Hello, React</h1>, document.getElementById("root"))
+const h1 = document.createElement("h1")
+h1.textContent = "Hello World"
+h1.className = "header"
+console.log(h1)
 
-// const h1 = document.createElement("h1")
-// h1.textContent = "This is an imperative way to program"
-// h1.className = "header"
-// document.getElementById("root").append(h1)
+// <h1 class="header">Hello World</h1
+
+const element = <h1 className="header">This is JSX</h1>
+console.log(element)
+
+/*
+{
+    type: "h1"
+    key: null
+    ref: null
+    props: {
+        className: "header",
+        children: "This is JSX"
+    },
+    _owner: null,
+    _store: {}
+}
+ */
+
+// JSX
+ReactDOM.render(element, document.getElementById("root"))
